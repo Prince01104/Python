@@ -1,0 +1,44 @@
+import turtle
+
+# Screen setup
+screen = turtle.Screen()
+screen.bgcolor("blue")
+screen.title("Apple Logo")
+
+# Turtle setup
+logo = turtle.Turtle()
+logo.speed(10)
+logo.color("black")
+logo.hideturtle()
+
+# Draw the main body of the logo
+logo.penup()
+logo.goto(0, -200)
+logo.pendown()
+logo.begin_fill()
+logo.circle(150)
+logo.end_fill()
+
+# Draw the bite
+logo.penup()
+logo.goto(90, 0)
+logo.pendown()
+logo.begin_fill()
+logo.color("blue")
+logo.circle(50)
+logo.end_fill()
+
+# Draw the leaf
+logo.penup()
+logo.goto(-50, 180)
+logo.pendown()
+logo.begin_fill()
+logo.color("black")
+logo.left(30)
+logo.circle(50, 60)
+logo.left(120)
+logo.circle(50, 60)
+logo.end_fill()
+
+# Finish
+screen.mainloop()
